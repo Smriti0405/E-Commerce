@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Roboto+Slab&display=swap');
+
+
+main{
+    margin-top: 6.5rem;
+}
+.navbar-brand{
+    font-family: 'Alkatra';
+}
+.nav-link, .review{
+    font-family: 'Roboto Slab', serif;
+}
+.fas.fa-heart{
+    color: red;
+}

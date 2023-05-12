@@ -1,0 +1,30 @@
+<% layout('layout/boilerplate') -%>
+
+
+<div class="col-md-6 mx-auto">
+    <%- include('../partials/flash') %>
+    <form action="/products" method="post" class="validated" novalidate>
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" name="name" id="name" class="form-control" placeholder="Name" required>
+        </div>
+        <div class="mb-3">
+            <label for="img" class="form-label">Image URL</label>
+            <input type="text" name="img" id="img" class="form-control" placeholder="Image URL" required>
+        </div>
+        <div class="mb-3">
+            <label for="price" class="form-label">Price</label>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">Rs.</span>
+                <input type="number" name="price" id="price" class="form-control" placeholder="Price" aria-label="Username" aria-describedby="basic-addon1" required>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="desc" class="form-label">Description</label>
+            <textarea name="desc" id="desc" rows="5" class="form-control" placeholder="Item Descriptiom" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Add product</button>
+    
+    </form>
+
+</div>
